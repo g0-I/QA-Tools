@@ -20,7 +20,7 @@ export const ID = () => {
     <>
       <div> ID:PASSの形式で入力</div>
       <input value={id} onChange={handleChange} type="text" />
-      <button onClick={encoding}>encoding to base64</button>
+      <button className='Button' onClick={encoding}>encoding to base64</button>
     </>
   );
 }
