@@ -1,13 +1,13 @@
 import './App.css';
-import {ID, PASS, BUTTON} from './Form';
+import {ENCODE} from './Encode';
+import {UNIX} from './Unix';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-      <ID />
-      {/* <PASS />
-      <BUTTON /> */}
+      <ENCODE />
+      <UNIX />
       </header>
     </div>
   );
