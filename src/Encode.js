@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 export const ENCODE = () => {
-  const [text, setText] = useState('[ここにリアルタイムで変換されます]');
+  const [text, setText] = useState('-');
 
   const handleChange = (e) => {
     const encoded = btoa(e.target.value);
