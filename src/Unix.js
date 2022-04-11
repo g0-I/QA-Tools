@@ -4,15 +4,15 @@ export const UNIX = () => {
   const [time, setTime] = useState('-');
 
   const handleChange = (e) => {
-    const dateTime = new Date(e.target.value * 1000);
+    const dateTime = new Date(parseInt(e.target.value));
     setTime(() => (dateTime.toString()));
   }
 
   return (
     <>
-      <div> [UNIX Timestamp to Date] ※調整中</div>
+      <div> [UNIX Timestamp to Date] </div>
       <input onChange={handleChange} type="text"></input>
-      <div>変換結果：{time}</div>
+      <div>TimeStamp(ms)：{time}</div>
       <br/>
     </>
   );

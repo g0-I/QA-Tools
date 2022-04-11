@@ -11,7 +11,7 @@ export const ENCODE = () => {
   return (
     <>
       <div> [Text to Base64]</div>
-      <input onChange={handleChange} type="password"></input>
+      <input onChange={handleChange} type="text"></input>
       <div>エンコード結果：{text}</div>
       <br/>
     </>
