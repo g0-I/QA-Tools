@@ -1,24 +1,26 @@
 import React, { useState } from 'react';
+import { Buffer } from 'buffer';
 
 export const ENCODE = () => {
-  const [text, setText] = useState('-');
+  const [encodedText, setEncodeText] = useState('-');
   const [decodedText, setDecodedText] = useState('-');
 
-  const handleChange = (e:any) => {
-    setText(() => (btoa(e.target.value)));
+  const Encode = (e : any) => {
+    setEncodeText(() => (Buffer.from(e.target.value).toString('base64')));
   }
 
-  const handleChange2 = (e:any) => {
-    setDecodedText(() => (atob(e.target.value)));
+  const Decode = (e : any) => {
+    setDecodedText(() => (Buffer.from(e.target.value, 'base64').toString('ascii')));
   }
 
   return (
     <>
       <div> [Text to Base64]</div>
-      <input onChange={handleChange} type="password"></input>
-      <div>エンコード結果：{text}</div>
+      <input onChange={Encode} type="password"></input>
+      <div>エンコード結果：{encodedText}</div>
+      
       <div> [Base64 to Text]</div>
-      <input onChange={handleChange2} type="text"></input>
+      <input onChange={Decode} type="text"></input>
       <div>デコード結果：{decodedText}</div>
       <br/>
     </>
