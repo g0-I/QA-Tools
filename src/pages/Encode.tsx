@@ -15,13 +15,13 @@ export const ENCODE = () => {
 
   return (
     <>
-      <div> [Text to Base64]</div>
+      <div>[エンコード]</div>
       <input onChange={Encode} type="password"></input>
-      <div>エンコード結果：{encodedText}</div>
-      
-      <div> [Base64 to Text]</div>
+      <div>変換結果：{encodedText}</div>
+
+      <div> [デコード]</div>
       <input onChange={Decode} type="text"></input>
-      <div>デコード結果：{decodedText}</div>
+      <div>変換結果：{decodedText}</div>
       <br/>
     </>
   );

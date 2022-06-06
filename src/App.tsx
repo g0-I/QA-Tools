@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
-import {ENCODE} from './Encode';
-import {UNIX} from './Unix';
+import {ENCODE} from './pages/Encode';
+import {UNIX} from './pages/Unix';
 
 function App() {
   return (
