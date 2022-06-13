@@ -21,7 +21,10 @@ const Layout = () => {
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/encode">Endode/Decode</Link>
+            <Link to="/encode">Endode</Link>
+          </li>
+          <li>
+            <Link to="/decode">Decode</Link>
           </li>
           <li>
             <Link to="/unix">UnixTime</Link>

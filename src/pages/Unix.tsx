@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 export const UNIX = () => {
   const [time, setTime] = useState('-');
 
-  const handleChange = (e:any) => {
+  const handleChange = (e : any) => {
     const dateTime = new Date(parseInt(e.target.value));
     setTime(() => (dateTime.toString()));
   }
