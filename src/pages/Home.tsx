@@ -6,7 +6,12 @@ const Home = () => {
     font-size: 1.5em;
   `;
 
-  return <Title>Home</Title>;
+  return (
+    <>
+      <Title>Home</Title>
+
+    </>
+  );
 };
 
 export default Home;

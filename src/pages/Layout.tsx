@@ -30,11 +30,6 @@ const Layout = () => {
             <Link to="/unix">UnixTime</Link>
           </li>
         </ul>
-        <button onClick={toggleOpen}>hoge</button>
-            <Drawer anchor='left' open={open} onClose={toggleOpen}>
-                <p>hello</p>
-            </Drawer>
-
       </SideNavContainer>
     </SideNav>
       <Outlet />
