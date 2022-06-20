@@ -16,5 +16,6 @@ export const UNIX = () => {
       <br/>
     </>
   );
-
 }
+
+export default UNIX;

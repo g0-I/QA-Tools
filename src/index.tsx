@@ -7,9 +7,9 @@ import reportWebVitals from './reportWebVitals';
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import NoPage from "./pages/NoPage";
-import {ENCODE} from './pages/Encode';
-import {DECODE} from './pages/Decode';
-import {UNIX} from './pages/Unix';
+import ENCODE from './pages/Encode';
+import DECODE from './pages/Decode';
+import UNIX from './pages/Unix';
 
 export default function App() {
 

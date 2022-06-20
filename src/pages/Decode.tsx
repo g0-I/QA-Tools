@@ -17,3 +17,5 @@ export const DECODE = () => {
     </>
   );
 }
+
+export default DECODE;

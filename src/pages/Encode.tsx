@@ -16,3 +16,5 @@ export const ENCODE = () => {
     </>
   );
 }
+
+export default ENCODE;
