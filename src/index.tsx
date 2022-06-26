@@ -17,6 +17,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="/utility-tools" element={<Home />} />
           <Route path="/encode" element={<ENCODE />} />
           <Route path="/decode" element={<DECODE />} />
           <Route path="/unix" element={<UNIX />} />

@@ -9,7 +9,6 @@ const Home = () => {
   return (
     <>
       <Title>Home</Title>
-
     </>
   );
 };
